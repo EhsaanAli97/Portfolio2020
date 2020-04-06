@@ -237,8 +237,8 @@
 							<div class="border"></div>
 							<div id="errorMessage"></div>
 							<form
-								method="post"
 								action="mailHandler.php"
+								method="POST"
 								class="contact-form animate-bottom"
 								onsubmit="return validation()"
 							>
@@ -264,7 +264,9 @@
 									rows="4"
 								></textarea>
 								<div class="status"></div>
-								<button type="submit" class="btn-send">Send</button>
+								<button type="submit" name="submit" class="btn-send">
+									Send
+								</button>
 							</form>
 						</div>
 					</div>
