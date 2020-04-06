@@ -17,21 +17,18 @@
 	// 	}
 	// }
 
-	$name=$_POST['name'];
-	$email=$_POST['email'];
-	$message=$_POST['message'];
+	if (isset($_POST['submit'])) {
+		$name = $_POST['name'];
+		$email=$_POST['email'];
+		$message=$_POST['message'];
+
+		$mailTo = "info@ehsaanali.co.uk";
+		$headers = "From: ".$email;
+		$txt = "You have received an email from ".$name.".\n\n".$message;
 
 
-	$email_subject = "New Form Submission";
-
-	$email_body = "User Name: $name.\n".
-					"User Email: $email.\n".
-						"User Message: $message.\n";
-
-	$to = "ehsaanali123@gmail.com";
-
-	mail($to,$email_subject,$email_body,$headers);
-
-	header("Location: index.html");
+		mail($mailTo, $txt, $headers);
+		header("Location: index.html?mailsend");
+	}
 
 ?>
