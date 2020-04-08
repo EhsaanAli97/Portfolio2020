@@ -20,7 +20,7 @@
 		<!-- ==================== jQuery File  ====================  -->
 		<script
 			type="text/javascript"
-			src="http://code.jquery.com/jquery-1.10.0.min.js"
+			src="https://code.jquery.com/jquery-1.10.0.min.js"
 		></script>
 	</head>
 	<body>
@@ -135,84 +135,119 @@
 		<section class="projects" id="project-area">
 			<div class="container">
 				<div class="projects-content">
+					<div id="myModal1" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="./img/Portfolio.jpg" alt="Portfolio" />
+							<div class="modal-info">
+								<span><h3>Personal Portfolio:</h3></span>
+								<p>
+									This is my personal portfolio, which was designed and
+									developed by myself. I used various different tools to create
+									the final product. <br />
+									<br />
+									The technologies/languages used are as followed: <br />
+									- HTML. <br />
+									- CSS. <br />
+									- JavaScript. <br />
+									- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
+									<br />
+									- VSCode. <br />
+									- Photoshop. <br />
+									<br />
+									This website was developed after the completion of 'Responsive
+									Web Design', 'JavaScript Algorithms' and 'Front-End Libraries'
+									units in FreeCodeCamp. I decided to put my knowledge of HTML,
+									CSS and JavaScript to the test and my end product is the
+									website you're currently browisng.
+								</p>
+								<a href="https://ehsaanali.co.uk/" target="_blank">
+									<button type="button" class="btn">View Website</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id="myModal2" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<img src="./img/TruBurger.jpg" alt="" />
+							<div class="modal-info">
+								<span> <h3>Tru Burger:</h3> </span>
+								<p>
+									This is a website that I designed as a revamp for Tru Burger's
+									existing website. I chose this specific website because I
+									often go here to eat, familiar with the staff and etc;
+									therefore, I felt like it would be the most appropriate
+									website to remake. <br />
+									<br />
+									The technologies/languages used are as followed: <br />
+									- HTML. <br />
+									- CSS. <br />
+									- JavaScript. <br />
+									- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
+									<br />
+									- VSCode. <br />
+									- Photoshop. <br />
+									<br />
+								</p>
+								<a href="https://truburger.netlify.com" target="_blank">
+									<button type="button" class="btn">View Website</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
 					<div class="projects-text">
 						<div class="line animate-left"></div>
 						<h1 class="animate-left">
 							Projects
 						</h1>
 					</div>
+
 					<div class="project-images animate-top">
 						<div>
 							<grid-item class="items">
-								<img class="img1" src="./img/Portfolio.jpg" alt="" />
+								<a href="https://ehsaanali.co.uk/" target="_blank">
+									<img class="img1" src="./img/Portfolio.jpg" alt="portfolio" />
+								</a>
 								<h3>Personal Portfolio!</h3>
 								<p>
 									My Portfolio website, developed from scratch, demonstrating my
 									current knowledge in HTML, CSS and JavaScript.
 								</p>
-								<button class="btn" id="modal-btn">
-									Visit Website
+								<button
+									class="modal-button btn modal-toggle"
+									href="#myModal1"
+									onclick="lockScroll();"
+								>
+									Read More
 								</button>
 							</grid-item>
 						</div>
+
 						<div>
 							<grid-item class="items">
-								<img class="img2" src="img/TruBurger.jpg" alt="" />
-								<h3 class="">Tru Burger!</h3>
-								<p class="">
+								<a href="https://truburger.netlify.com/" target="_blank">
+									<img class="img2" src="img/TruBurger.jpg" alt="truburger" />
+								</a>
+								<h3>Tru Burger!</h3>
+								<p>
 									A website that I designed as a revamp for Tru Burger's current
 									website. HTML, CSS and JavaScript were used to create the
 									website.
 								</p>
-								<a href="https://www.google.com" target="_blank">
-									<button class="btn">
-										Visit Website
-									</button>
-								</a>
+								<button
+									class="modal-button btn modal-toggle2"
+									href="#myModal2"
+									onclick="lockScroll();"
+								>
+									Read More
+								</button>
 							</grid-item>
 						</div>
-						<div>
-							<grid-item class="items">
-								<img class="img3" src="img/FOTPage.jpg" alt="" />
-								<h3 class="">Future Of Tech!</h3>
-								<p class="">
-									A basic Landing Page that I created to test my HTML & CSS
-									skills during the completion of FreeCodeCamp online course.
-								</p>
-								<a href="https://www.google.com" target="_blank">
-									<button class="btn">
-										Visit Website
-									</button>
-								</a>
-							</grid-item>
-						</div>
-						<!-- <div class="img4">
-							<grid-item class="items">
-								<span>Project Alpha!</span>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-								consequatur reiciendis dolor maiores cumque vitae ullam minus
-								possimus, rerum voluptatem dolore autem tempora ducimus, aperiam
-								velit, alias cum distinctio ipsam!
-							</grid-item>
-						</div>
-						<div class="img5">
-							<grid-item class="items">
-								<span>Project Alpha!</span>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-								consequatur reiciendis dolor maiores cumque vitae ullam minus
-								possimus, rerum voluptatem dolore autem tempora ducimus, aperiam
-								velit, alias cum distinctio ipsam!
-							</grid-item>
-						</div>
-						<div class="img6">
-							<grid-item class="items">
-								<span>Project Alpha!</span>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-								consequatur reiciendis dolor maiores cumque vitae ullam minus
-								possimus, rerum voluptatem dolore autem tempora ducimus, aperiam
-								velit, alias cum distinctio ipsam!
-							</grid-item>
-						</div> -->
 					</div>
 				</div>
 			</div>
