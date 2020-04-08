@@ -82,15 +82,15 @@ function validation() {
 	errorMessage.style.fontWeight = 'bold';
 
 	if (name.length < 2) {
-		text = 'Please enter a valid name';
+		text = 'Please Enter a Valid Name';
 		errorMessage.innerHTML = text;
 		return false;
 	} else if (email.length < 5 && !email.includes('@') && !email.includes('.')) {
-		text = 'Please enter a valid email address';
+		text = 'Please Enter a Valid Email Address';
 		errorMessage.innerHTML = text;
 		return false;
 	} else if (message.length < 2) {
-		text = 'Please Enter more than 2 characters';
+		text = 'Please Enter More Than 2 Characters';
 		errorMessage.innerHTML = text;
 		return false;
 	} else {

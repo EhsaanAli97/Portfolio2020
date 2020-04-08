@@ -47,6 +47,11 @@ p {
 	font-size: 1.2rem;
 }
 
+img {
+	width: 1500px;
+	max-width: 100%;
+}
+
 span {
 	font-weight: 900;
 	text-decoration: underline;
@@ -273,7 +278,8 @@ header {
 }
 
 .about-me-text,
-.projects-text {
+.projects-text,
+.contact-text {
 	margin-left: 10rem;
 	font-family: var(--header-font);
 	color: var(--header-color);
@@ -312,7 +318,7 @@ header {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
-	padding-top: 12%; /* Location of the box */
+	padding: 14rem 0;
 	left: 0;
 	top: 0;
 	width: 100%; /* Full width */
@@ -367,9 +373,10 @@ header {
 	cursor: pointer;
 }
 
-.projects-text h1 {
+.projects-text h1,
+.contact-text h1 {
 	font-size: 3.5rem;
-	padding-top: 1rem;
+	padding-top: 1.4rem;
 }
 
 .project-images {
@@ -549,5 +556,85 @@ footer {
 	100% {
 		opacity: 0;
 		transform: translateY(-1rem);
+	}
+}
+
+/*Start Media Queries*/
+@media screen and (max-width: 425px) {
+	.hero {
+		display: block;
+		margin-top: 10rem;
+	}
+
+	.headline,
+	.sub-headline {
+		font-size: 2.7rem;
+	}
+
+	.fa-hand-peace {
+		padding: 2.5rem;
+	}
+
+	.about-me-text,
+	.projects-text,
+	.contact-text {
+		margin-left: auto;
+	}
+
+	.line {
+		margin-left: auto;
+	}
+
+	.about-me-desc {
+		display: block;
+		margin: auto;
+		padding-top: 3rem;
+	}
+
+	.about-me-desc p {
+		margin: auto;
+	}
+
+	.project-images {
+		display: block;
+	}
+
+	grid-item {
+		display: block;
+	}
+
+	.btn {
+		margin: auto;
+		margin-top: 1rem;
+	}
+
+	.about-me-text h1,
+	.projects-text h1,
+	.contact-text h1 {
+		font-size: 3.2rem;
+	}
+
+	.btn-send {
+		float: left;
+	}
+
+	.modal {
+		padding: 1rem;
+	}
+
+	.modal-content {
+		display: block;
+	}
+
+	.modal-content img {
+		padding: 1rem;
+	}
+
+	.close {
+		margin: auto;
+	}
+
+	p {
+		font-size: 1rem;
 	}
 }
