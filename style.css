@@ -390,6 +390,10 @@ header {
 	transition: transform 0.5s ease-in-out;
 }
 
+#wrapper .img1:hover {
+	cursor: default;
+}
+
 #wrapper:hover .progress {
 	-webkit-transform: scale(1.3);
 	-ms-transform: scale(1.3);
@@ -423,10 +427,6 @@ grid-item {
 .items h3 {
 	margin: 1.2rem 0;
 }
-
-/* .item3 {
-	display: inline-block;
-} */
 
 .btn {
 	border: 2px solid white;
