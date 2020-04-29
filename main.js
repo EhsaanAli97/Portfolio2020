@@ -45,6 +45,7 @@ navToggler.addEventListener('click', function () {
 
 let modalToggler1 = selectElement('.modal-toggle');
 let modalToggler2 = selectElement('.modal-toggle2');
+let modalToggler3 = selectElement('.modal-toggle3');
 
 modalToggler1.addEventListener('click', function () {
 	body.classList.toggle('lock-scroll');

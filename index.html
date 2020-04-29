@@ -1,366 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ehsaan Ali</title>
 
-		<!-- ==================== Font Awesome Style Sheet ==================== -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ehsaan Ali</title>
 
-		<!-- ==================== Custom Style Sheet ====================  -->
-		<link rel="stylesheet" href="style.css" />
+	<!-- ==================== Font Awesome Style Sheet ==================== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
-		<!-- ==================== Scroll Reveal  ====================  -->
-		<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- ==================== Custom Style Sheet ====================  -->
+	<link rel="stylesheet" href="style.css" />
 
-		<!-- ==================== jQuery File  ====================  -->
-		<script
-			type="text/javascript"
-			src="https://code.jquery.com/jquery-1.10.0.min.js"
-		></script>
-	</head>
-	<body>
-		<!-- ==================== Start Header Area ==================== -->
-		<header>
-			<div class="container">
-				<nav class="nav-container">
-					<div class="menu-toggle">
-						<i class="fas fa-bars" onclick="lockScroll();"></i>
-						<i class="fas fa-times" onclick="lockScroll();"></i>
+	<!-- ==================== Scroll Reveal  ====================  -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!-- ==================== jQuery File  ====================  -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+</head>
+
+<body>
+	<!-- ==================== Start Header Area ==================== -->
+	<header>
+		<div class="container">
+			<nav class="nav-container">
+				<div class="menu-toggle">
+					<i class="fas fa-bars" onclick="lockScroll();"></i>
+					<i class="fas fa-times" onclick="lockScroll();"></i>
+				</div>
+				<ul class="nav-items nav-toggle" id="menu">
+					<li class="nav-links">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-links">
+						<a href="#about-area" class="nav-link">About</a>
+					</li>
+					<li class="nav-links">
+						<a href="#project-area" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-links">
+						<a href="#contact-area" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- ==================== End Header Area ==================== -->
+
+	<!-- ==================== Start Hero Area ==================== -->
+	<section class="hero" id="hero">
+		<div class="container">
+			<div class="back-to-top animate-right">
+				<a href="#about-area"> <i class="fas fa-chevron-down"></i> </a>
+			</div>
+			<div class="header-info">
+				<h1 class="headline animate-top">
+					Hi there!<i class="far fa-hand-peace"></i>
+				</h1>
+				<h2 class="sub-headline animate-bottom">
+					I'm Ehsaan, <br />A Front-End Web Developer
+				</h2>
+				<a href="download/Ehsaan's CV.docx" target="_blank">
+					<button class="cv-btn animate-left">Download CV</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- ==================== End Hero Area ==================== -->
+
+	<!-- ==================== Start About Me Area ==================== -->
+	<section class="about-me" id="about-area">
+		<div class="container">
+			<div class="about-me-info">
+				<div class="about-me-text">
+					<div class="line animate-left"></div>
+					<h1 class="animate-left">
+						About me
+					</h1>
+					<h2 class="animate-right">
+						Summary
+					</h2>
+				</div>
+
+				<div class="about-me-desc">
+					<img class="animate-top" src="img/about.jpg" alt="Ehsaan" />
+
+					<p class="animate-bottom">
+						I am a 22 year old self-taught Front-End Web Developer from
+						Birmingham, UK.
+						<br />
+						<br />
+						In December 2019, I felt that I wasn’t content with my current job
+						as an Uber Driver. I decided to pursue my true passion of becoming
+						a front-end developer; rapidly changing my lifestyle to make a
+						habit of waking up at 5am in the morning in order to study and
+						practise various topics I had taught myself.
+						<br />
+						<br />
+						In order to keep on-top of my skills, I am completing an online
+						course,
+						<span>
+							<a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp,
+							</a>
+						</span>
+						to study Web Development. This covered huge areas such as:
+						Responsive Web Design Certification, JavaScript Algorithms and
+						Data Structures Certification, Front End Libraries Certification,
+						Data Visualization Certification, APIs and Microservices
+						Certification, Information Security and Quality Assurance
+						Certification.
+						<br />
+						<br />
+						I am very passionate and dedicated when it comes to my work;
+						always open to learning new technologies and frameworks. I believe
+						I have a strong foundation of web design and development; with a
+						passion in making web applications that are clean and simple, with
+						a distinct yet elegant design. I am a firm believer in "Success is
+						a journey, not a destination".
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================== End About Me Area ==================== -->
+
+	<!-- ==================== Start Projects Area ==================== -->
+	<section class="projects" id="project-area">
+		<div class="container">
+			<div class="projects-content">
+				<div id="myModal1" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<img src="./img/Portfolio.jpg" alt="Portfolio" />
+						<div class="modal-info">
+							<span>
+								<h3>Personal Portfolio:</h3>
+							</span>
+							<p>
+								This is my personal portfolio, which was designed and
+								developed by myself. I used various different tools to create
+								the final product. <br />
+								<br />
+								The technologies/languages used are as followed: <br />
+								- HTML. <br />
+								- CSS. <br />
+								- JavaScript. <br />
+								- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
+								<br />
+								- VSCode. <br />
+								- Photoshop. <br />
+								<br />
+								This website was developed after the completion of 'Responsive
+								Web Design', 'JavaScript Algorithms' and 'Front-End Libraries'
+								units in FreeCodeCamp. I decided to put my knowledge of HTML,
+								CSS and JavaScript to the test and my end product is the
+								website you're currently browisng.
+							</p>
+							<a href="https://ehsaanali.co.uk/" target="_blank">
+								<button type="button" class="btn">View Website</button>
+							</a>
+						</div>
 					</div>
-					<ul class="nav-items nav-toggle" id="menu">
-						<li class="nav-links">
-							<a href="#" class="nav-link">Home</a>
+				</div>
+
+				<div id="myModal2" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<img src="./img/TruBurger.jpg" alt="" />
+						<div class="modal-info">
+							<span>
+								<h3>Tru Burger:</h3>
+							</span>
+							<p>
+								This is a website that I designed as a revamp for Tru Burger's
+								existing website. I chose this specific website because I
+								often go here to eat, familiar with the staff and etc;
+								therefore, I felt like it would be the most appropriate
+								website to remake. <br />
+								<br />
+								The technologies/languages used are as followed: <br />
+								- HTML. <br />
+								- CSS. <br />
+								- JavaScript. <br />
+								- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
+								<br />
+								- VSCode. <br />
+								- Photoshop. <br />
+								<br />
+							</p>
+							<a href="https://truburger.netlify.com" target="_blank">
+								<button type="button" class="btn">View Website</button>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="myModal3" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<img src="./img/HeavenlyDates.jpg" alt="project3" />
+
+						<div class="modal-info">
+							<span>
+								<h3>Heavenly Dates:</h3>
+							</span>
+							<p>
+								A website designed for a client with a specific set of requirements. The purpose of the
+								website was to promote their business products, as well as their current social media
+								account. <strong>The website has been delayed due to a personal request from the client
+									themselves. It is still currently under development </strong> - will be up and
+								running in the next
+								2 weeks.
+								<br />
+								<br />
+								The technologies/languages used are as followed: <br />
+								- HTML. <br />
+								- CSS. <br />
+								- JavaScript. <br />
+								- PHP. <br />
+								- InVision Studio.
+								<br />
+								- VSCode. <br />
+								- Photoshop. <br />
+								<br />
+							</p>
+							<a href="https://truburger.netlify.com" target="_blank">
+								<button type="button" class="btn">View Website</button>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="projects-text">
+					<div class="line animate-left"></div>
+					<h1 class="animate-left">
+						Projects
+					</h1>
+				</div>
+
+				<div class="project-images animate-top">
+					<grid-item class="items">
+						<a href="https://ehsaanali.co.uk/" target="_blank">
+							<img class="img1" src="./img/Portfolio.jpg" alt="portfolio" />
+						</a>
+						<h3>Personal Portfolio!</h3>
+						<p>
+							My Portfolio website, developed from scratch, demonstrating my
+							current knowledge in HTML, CSS and JavaScript.
+						</p>
+						<button class="modal-button btn modal-toggle" href="#myModal1" onclick="lockScroll();">
+							Read More
+						</button>
+					</grid-item>
+
+					<grid-item class="items">
+						<a href="https://truburger.netlify.com/" target="_blank">
+							<img class="img1" src="img/TruBurger.jpg" alt="truburger" />
+						</a>
+						<h3>Tru Burger!</h3>
+						<p>
+							A website that I designed as a revamp for Tru Burger's current
+							website. HTML, CSS and JavaScript were used to create the
+							website.
+						</p>
+						<button class="modal-button btn modal-toggle2" href="#myModal2" onclick="lockScroll();">
+							Read More
+						</button>
+					</grid-item>
+
+					<grid-item class="items">
+						<div id="wrapper">
+							<a class="item3" href="https://truburger.netlify.com/" target="_blank">
+
+								<img class="img2" src="img/HeavenlyDates.jpg" alt="HeavenlyDates" />
+								<p class="progress">Under Development</p>
+
+							</a>
+						</div>
+						<h3>Heavenly Dates!</h3>
+						<p>
+							A website designed for a client with a specific set of requirements. It is still currently
+							under development. HTML, CSS, JavaScript, and PHP were used to create the website.  
+						</p>
+						<button class="modal-button btn modal-toggle2" href="#myModal3" onclick="lockScroll();">
+							Read More
+						</button>
+					</grid-item>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================== End Projects Area ==================== -->
+
+	<!-- ==================== Start Contact Area ==================== -->
+	<section class="contact-me" id="contact-area">
+		<div class="container">
+			<div class="contact-info">
+				<div class="contact-text">
+					<div class="line animate-left"></div>
+					<h1 class="animate-left">
+						Contact me
+					</h1>
+				</div>
+				<div class="contact-content">
+					<div class="contact-main">
+						<h2 class="animate-top">
+							Have a question or want to work together?
+						</h2>
+						<div class="border"></div>
+						<div id="errorMessage"></div>
+						<form action="mailHandler.php" method="POST" data-netlify="true"
+							class="contact-form animate-bottom" onsubmit="return validation()">
+							<input name="Name" id="name" class="txt-form name" type="text" placeholder="Name" />
+							<input name="email" id="email" class="txt-form email" type="email"
+								placeholder="Email Address" />
+							<textarea name="Message" id="message" class="txt-form txtarea"
+								placeholder="Enter your message" rows="4"></textarea>
+							<div class="status"></div>
+							<button type="submit" name="submit" class="btn-send">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================== Start Footer Area ==================== -->
+	<footer id="follow-me">
+		<div class="container">
+			<div class="to-the-top">
+				<a href="#hero">
+					<i class="fas fa-chevron-up"></i>
+				</a>
+			</div>
+
+			<div class="footer-content">
+				<div class="social-media">
+					<h2 class="animate-left">
+						Follow Me!
+					</h2>
+
+					<ul class="social-icons animate-right">
+						<li>
+							<a href="https://www.linkedin.com/in/ehsaan-ali-3a7b68174/" target="_blank">
+								<i class="fab fa-linkedin"></i>
+							</a>
 						</li>
-						<li class="nav-links">
-							<a href="#about-area" class="nav-link">About</a>
+
+						<li>
+							<a href="https://www.facebook.com/Ehsaan97" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
 						</li>
-						<li class="nav-links">
-							<a href="#project-area" class="nav-link">Projects</a>
-						</li>
-						<li class="nav-links">
-							<a href="#contact-area" class="nav-link">Contact</a>
+
+						<li>
+							<a href="https://www.instagram.com/ehsaanali97_/" target="_blank">
+								<i class="fab fa-instagram"></i>
+							</a>
 						</li>
 					</ul>
-				</nav>
-			</div>
-		</header>
-		<!-- ==================== End Header Area ==================== -->
 
-		<!-- ==================== Start Hero Area ==================== -->
-		<section class="hero" id="hero">
-			<div class="container">
-				<div class="back-to-top animate-right">
-					<a href="#about-area"> <i class="fas fa-chevron-down"></i> </a>
-				</div>
-				<div class="header-info">
-					<h1 class="headline animate-top">
-						Hi there!<i class="far fa-hand-peace"></i>
-					</h1>
-					<h2 class="sub-headline animate-bottom">
-						I'm Ehsaan, <br />A Front-End Web Developer
-					</h2>
-					<a href="download/Ehsaan's CV.docx" target="_blank">
-						<button class="cv-btn animate-left">Download CV</button>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- ==================== End Hero Area ==================== -->
-
-		<!-- ==================== Start About Me Area ==================== -->
-		<section class="about-me" id="about-area">
-			<div class="container">
-				<div class="about-me-info">
-					<div class="about-me-text">
-						<div class="line animate-left"></div>
-						<h1 class="animate-left">
-							About me
-						</h1>
-						<h2 class="animate-right">
-							Summary
-						</h2>
-					</div>
-
-					<div class="about-me-desc">
-						<img class="animate-top" src="img/about.jpg" alt="Ehsaan" />
-
-						<p class="animate-bottom">
-							I am a 22 year old self-taught Front-End Web Developer from
-							Birmingham, UK.
-							<br />
-							<br />
-							In December 2019, I felt that I wasn’t content with my current job
-							as an Uber Driver. I decided to pursue my true passion of becoming
-							a front-end developer; rapidly changing my lifestyle to make a
-							habit of waking up at 5am in the morning in order to study and
-							practise various topics I had taught myself.
-							<br />
-							<br />
-							In order to keep on-top of my skills, I am completing an online
-							course,
-							<span>
-								<a href="https://www.freecodecamp.org/learn/" target="_blank"
-									>FreeCodeCamp,
-								</a>
-							</span>
-							to study Web Development. This covered huge areas such as:
-							Responsive Web Design Certification, JavaScript Algorithms and
-							Data Structures Certification, Front End Libraries Certification,
-							Data Visualization Certification, APIs and Microservices
-							Certification, Information Security and Quality Assurance
-							Certification.
-							<br />
-							<br />
-							I am very passionate and dedicated when it comes to my work;
-							always open to learning new technologies and frameworks. I believe
-							I have a strong foundation of web design and development; with a
-							passion in making web applications that are clean and simple, with
-							a distinct yet elegant design. I am a firm believer in "Success is
-							a journey, not a destination".
+					<div class="copyright animate-left">
+						<p>
+							Ehsaan Ali &copy; 2020.
 						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- ==================== End About Me Area ==================== -->
+		</div>
+	</footer>
+	<!-- ==================== End Footer Area ==================== -->
 
-		<!-- ==================== Start Projects Area ==================== -->
-		<section class="projects" id="project-area">
-			<div class="container">
-				<div class="projects-content">
-					<div id="myModal1" class="modal">
-						<!-- Modal content -->
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<img src="./img/Portfolio.jpg" alt="Portfolio" />
-							<div class="modal-info">
-								<span><h3>Personal Portfolio:</h3></span>
-								<p>
-									This is my personal portfolio, which was designed and
-									developed by myself. I used various different tools to create
-									the final product. <br />
-									<br />
-									The technologies/languages used are as followed: <br />
-									- HTML. <br />
-									- CSS. <br />
-									- JavaScript. <br />
-									- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
-									<br />
-									- VSCode. <br />
-									- Photoshop. <br />
-									<br />
-									This website was developed after the completion of 'Responsive
-									Web Design', 'JavaScript Algorithms' and 'Front-End Libraries'
-									units in FreeCodeCamp. I decided to put my knowledge of HTML,
-									CSS and JavaScript to the test and my end product is the
-									website you're currently browisng.
-								</p>
-								<a href="https://ehsaanali.co.uk/" target="_blank">
-									<button type="button" class="btn">View Website</button>
-								</a>
-							</div>
-						</div>
-					</div>
+	<!-- ==================== Custom JS File ==================== -->
+	<script src="main.js"></script>
+</body>
 
-					<div id="myModal2" class="modal">
-						<!-- Modal content -->
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<img src="./img/TruBurger.jpg" alt="" />
-							<div class="modal-info">
-								<span> <h3>Tru Burger:</h3> </span>
-								<p>
-									This is a website that I designed as a revamp for Tru Burger's
-									existing website. I chose this specific website because I
-									often go here to eat, familiar with the staff and etc;
-									therefore, I felt like it would be the most appropriate
-									website to remake. <br />
-									<br />
-									The technologies/languages used are as followed: <br />
-									- HTML. <br />
-									- CSS. <br />
-									- JavaScript. <br />
-									- Moqups (Online Mockup, Wireframe and UI Prototyping Tool).
-									<br />
-									- VSCode. <br />
-									- Photoshop. <br />
-									<br />
-								</p>
-								<a href="https://truburger.netlify.com" target="_blank">
-									<button type="button" class="btn">View Website</button>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="projects-text">
-						<div class="line animate-left"></div>
-						<h1 class="animate-left">
-							Projects
-						</h1>
-					</div>
-
-					<div class="project-images animate-top">
-						<div>
-							<grid-item class="items">
-								<a href="https://ehsaanali.co.uk/" target="_blank">
-									<img class="img1" src="./img/Portfolio.jpg" alt="portfolio" />
-								</a>
-								<h3>Personal Portfolio!</h3>
-								<p>
-									My Portfolio website, developed from scratch, demonstrating my
-									current knowledge in HTML, CSS and JavaScript.
-								</p>
-								<button
-									class="modal-button btn modal-toggle"
-									href="#myModal1"
-									onclick="lockScroll();"
-								>
-									Read More
-								</button>
-							</grid-item>
-						</div>
-
-						<div>
-							<grid-item class="items">
-								<a href="https://truburger.netlify.com/" target="_blank">
-									<img class="img2" src="img/TruBurger.jpg" alt="truburger" />
-								</a>
-								<h3>Tru Burger!</h3>
-								<p>
-									A website that I designed as a revamp for Tru Burger's current
-									website. HTML, CSS and JavaScript were used to create the
-									website.
-								</p>
-								<button
-									class="modal-button btn modal-toggle2"
-									href="#myModal2"
-									onclick="lockScroll();"
-								>
-									Read More
-								</button>
-							</grid-item>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ==================== End Projects Area ==================== -->
-
-		<!-- ==================== Start Contact Area ==================== -->
-		<section class="contact-me" id="contact-area">
-			<div class="container">
-				<div class="contact-info">
-					<div class="contact-text">
-						<div class="line animate-left"></div>
-						<h1 class="animate-left">
-							Contact me
-						</h1>
-					</div>
-					<div class="contact-content">
-						<div class="contact-main">
-							<h2 class="animate-top">
-								Have a question or want to work together?
-							</h2>
-							<div class="border"></div>
-							<div id="errorMessage"></div>
-							<form
-								action="mailHandler.php"
-								method="POST"
-								data-netlify="true"
-								class="contact-form animate-bottom"
-								onsubmit="return validation()"
-							>
-								<input
-									name="Name"
-									id="name"
-									class="txt-form name"
-									type="text"
-									placeholder="Name"
-								/>
-								<input
-									name="email"
-									id="email"
-									class="txt-form email"
-									type="email"
-									placeholder="Email Address"
-								/>
-								<textarea
-									name="Message"
-									id="message"
-									class="txt-form txtarea"
-									placeholder="Enter your message"
-									rows="4"
-								></textarea>
-								<div class="status"></div>
-								<button type="submit" name="submit" class="btn-send">
-									Send
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ==================== Start Footer Area ==================== -->
-		<footer id="follow-me">
-			<div class="container">
-				<div class="to-the-top">
-					<a href="#hero">
-						<i class="fas fa-chevron-up"></i>
-					</a>
-				</div>
-
-				<div class="footer-content">
-					<div class="social-media">
-						<h2 class="animate-left">
-							Follow Me!
-						</h2>
-
-						<ul class="social-icons animate-right">
-							<li>
-								<a
-									href="https://www.linkedin.com/in/ehsaan-ali-3a7b68174/"
-									target="_blank"
-								>
-									<i class="fab fa-linkedin"></i>
-								</a>
-							</li>
-
-							<li>
-								<a href="https://www.facebook.com/Ehsaan97" target="_blank">
-									<i class="fab fa-facebook"></i>
-								</a>
-							</li>
-
-							<li>
-								<a
-									href="https://www.instagram.com/ehsaanali97_/"
-									target="_blank"
-								>
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-						</ul>
-
-						<div class="copyright animate-left">
-							<p>
-								Ehsaan Ali &copy; 2020.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- ==================== End Footer Area ==================== -->
-
-		<!-- ==================== Custom JS File ==================== -->
-		<script src="main.js"></script>
-	</body>
 </html>
